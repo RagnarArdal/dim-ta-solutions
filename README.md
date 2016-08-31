@@ -1,4 +1,4 @@
 # dim-ta-solutions
 Discrete Mathematics and Its Applications: TA Solutions
 
-## A test
+Solution document used by TAs in classes
