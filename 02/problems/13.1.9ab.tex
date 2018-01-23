@@ -4,14 +4,24 @@
 
 \problem{9}
 \begin{enumerate}[a)]
-	\item Construct a derivation of $0^21^4$ using the grammar $G_1$ in Example 6.
-	\item Construct a derivation of $0^21^4$ using the grammar $G_2$ in Example 6.
+	\item Construct a derivation of $0^21^4$ using the grammar $G_1$ in Example 6. \\
+		$G_1 = \{V_1, T_1, S_1, P_1\}$ \\
+		$V_1 = \{S, 0, 1\}$ \\
+		$T_1 = \{0, 1\}$ \\
+		$S_1 = S$ \\
+		$P_1 = \{S \rightarrow 0S, S \rightarrow S1, S \rightarrow \lambda\}$ \\
+	\item Construct a derivation of $0^21^4$ using the grammar $G_2$ in Example 6. \\
+		$G_2 = \{V_2, T_2, S_2, P_2\}$ \\
+		$V_2 = \{S, A, 0, 1\}$ \\
+		$T_2 = \{0, 1\}$ \\
+		$S_2 = S$ \\
+		$P_2 = \{S \rightarrow 0S, S \rightarrow 1A, S \rightarrow 1, A \rightarrow 1A, A \rightarrow 1, S \rightarrow \lambda\}$ \\
 \end{enumerate}
 
 \solution
 \begin{enumerate}[a)]
-	\item 
-	\item 
+	\item $S \Rightarrow 0S \Rightarrow 00S \Rightarrow 00S1 \Rightarrow 00S11 \Rightarrow 00S111 \Rightarrow 00S1111 \Rightarrow 001111$
+	\item $S \Rightarrow 0S \Rightarrow 00S \Rightarrow 001A \Rightarrow 0011A \Rightarrow 00111A \Rightarrow 001111A \Rightarrow 001111$
 \end{enumerate}
 
 \end{document}
