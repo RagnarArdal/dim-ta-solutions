@@ -14,9 +14,15 @@ Show thtat there is a context-free grammar generating each of these sets.
 
 \solution
 \begin{enumerate}[a)]
-	\item 
-	\item 
-	\item 
+	\item Let $S_1$ be the initial nonterminal in $G_1$ and $S_2$ be the initial nonterminal in $G_2$.
+     We construct a new grammar $G$ that has an initial nonterminal $S$ and the product
+     $S \rightarrow S_1 \mid S_2$. Then $L(G) = L(G_1)\cup{}L(G_2)$. 
+	\item Let $S_1$ be the initial nonterminal in $G_1$ and $S_2$ be the initial nonterminal in $G_2$.
+    We construct a new grammar $G$ that has an initial nonterminal $S$ and the product
+    $S \rightarrow S_1S_2$. Then $L(G) = L(G_1)L(G_2)$. 
+	\item Let $S_1$ be the initial nonterminal in $G_1$.
+    We construct a new grammar $G$ that has an initial nonterminal $S$ and the product
+    $S \rightarrow S_1S \mid \epsilon$. Then $L(G) = L(G_1)^\ast$.
 \end{enumerate}
 
 \end{document}
