@@ -93,6 +93,7 @@ def main(
         *,
         overwrite=False,
     ):
+    # TODO: Docstring
     # Resolve paths
     spec = pathlib.Path(spec).expanduser().resolve()
     if dest is None:
@@ -117,7 +118,7 @@ def main(
         print("Not overwriting main.tex")
         main_file = open(os.devnull, "w")
     else:
-        print("Overwriting main.tex")
+        print("Writing main.tex")
         main_file = open(main_file_path, "w")
         main_file.write(MAIN_PREAMBLE)
         main_file.write("\n")
@@ -135,29 +136,84 @@ def main(
     problem = None
     subproblems = None  # This will just be a string; e.g., "abcf"
 
-    for line in lines:
+    for line in lines:  # pylint: disable=too-many-nested-blocks
         original_line = line
         line = line.split(maxsplit=2)
         if line:
             try:
                 if line[0] == "#":
+                    # # chapter_number chapter_name
                     assert len(line) == 3
                     chapter = line[1]
                     main_file.write(CHAPTER.format(chapter, line[2]))
                 elif line[0] == "##":
+                    # ## subchapter_number subchapter_name
                     assert len(line) == 3
                     subchapter = line[1]
                     main_file.write(SUBCHAPTER.format(subchapter, line[2]))
                 else:
                     if line[0] == "###":
+                        # ### problem_number subproblems
                         assert len(line) < 4
                         problem = line[1]
                         subproblems = line[2] if len(line) == 3 else ""
                     else:
+                        # problem_number subproblems
                         assert len(line) < 3
                         problem = line[0]
                         subproblems = line[1] if len(line) == 2 else ""
                     assert set(subproblems).issubset(string.ascii_lowercase)
+                    problem_file_name = "{}.{}.{}{}.tex".format(
+                        chapter,
+                        subchapter,
+                        problem,
+                        subproblems,
+                    )
+                    problem_file_path = dest/"problems"/problem_file_name
+                    if problem_file_path.exists() and not overwrite:
+                        # It already exists and we are not to overwrite it
+                        print("Not overwriting", problem_file_name)
+                    else:
+                        print("Writing", problem_file_name)
+                        content = []
+                        content.append(PROBLEM_PREAMBLE)
+                        content.append("\n")
+                        content.append(BEGIN_DOC)
+                        content.append("\n")
+
+                        problem_structure = []
+                        if subproblems:
+                            problem_structure.append("\\begin{enumerate}[a)]\n")
+                            subproblem_number = 0
+                            for character in subproblems:
+                                next_number = ord(character) - ord("a")
+                                if next_number != subproblem_number:
+                                    problem_number = next_number
+                                    problem_structure.append(
+                                        "\t\\setcounter{{enumi}}{{{}}}\n".format(problem_number),
+                                    )
+                                problem_structure.append("\t\\item \n")
+                                subproblem_number += 1
+                            problem_structure.append("\\end{enumerate}\n")
+                        else:
+                            problem_structure.append("\n")
+
+
+
+                        content.append("\\problem{" + problem + "}\n")
+                        content.extend(problem_structure)
+                        content.append("\\solution\n")
+                        content.extend(problem_structure)
+
+                        content.append(END_DOC)
+
+                        problem_file = open(problem_file_path, "w")
+                        for content_line in content:
+                            problem_file.write(content_line)
+
+                    # Lastly, write to the main file
+                    # If this or a previous step fails, the main file can still be compiled
+
                     main_file.write(
                         SUBFILE.format(
                             chapter,
@@ -166,32 +222,7 @@ def main(
                             subproblems,
                         ),
                     )
-                    problem_file_name = "{}.{}.{}{}.tex".format(
-                        chapter,
-                        subchapter,
-                        problem,
-                        subproblems,
-                    )
-                    problem_file_path = dest/"problems"/problem_file_name
-                    if not (problem_file_path.exists() and not overwrite):
-                        # It is not the case that it already exists and we are not to overwrite it
-                        print("Overwriting", problem_file_name)
-                        problem_file = open(problem_file_path, "w")
-                        problem_file.write(PROBLEM_PREAMBLE)
-                        problem_file.write("\n")
-                        problem_file.write(BEGIN_DOC)
-                        problem_file.write("\n")
-
-                        problem_file.write("\\problem{" + problem + "}\n\n")
-                        problem_file.write("\\begin{enumerate}\n\t\item\n\\end{enumerate}\n")
-                        problem_file.write("\n")
-                        problem_file.write("\\solution\n")
-                        problem_file.write("\\begin{enumerate}\n\t\item\n\\end{enumerate}\n")
-
-                        problem_file.write("\n")
-                        problem_file.write(END_DOC)
-                    else:
-                        print("Not overwriting", problem_file_name)
+                    main_file.write("\t\t\\pagebreak\n")
 
             except Exception:  # pylint: disable=broad-except
                 if panic_mode:
