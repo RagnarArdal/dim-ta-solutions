@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 
 
-"""Compile specification for problem sheet into latex skeleton."""
+"""Compile specification for problem sheet into latex skeleton.
+
+Copyright (c) 2018 Ragnar Ardal
+
+https://opensource.org/licenses/MIT
+"""
 
 
 import argparse
