@@ -1,0 +1,20 @@
+Exercise Class Solutions 2
+
+
+# 13 Modeling Computation
+
+## 1 Languages and Grammars
+
+1 a
+7
+9 ab
+15 abdf
+21 abc
+27
+29 abc
+
+## 2 Finite-State Machines with Output
+
+1 b
+5 a
+13

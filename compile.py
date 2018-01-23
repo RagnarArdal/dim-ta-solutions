@@ -207,8 +207,10 @@ def main(
 
                         content.append("\\problem{" + problem + "}\n")
                         content.extend(problem_structure)
+                        content.append("\n")
                         content.append("\\solution\n")
                         content.extend(problem_structure)
+                        content.append("\n")
 
                         content.append(END_DOC)
 
