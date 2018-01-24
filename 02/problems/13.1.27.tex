@@ -5,7 +5,17 @@
 \problem{27}
 Construct a derivation tree for $-109$ using the grammar given in Example 15.
 
-\solution
+\begin{grammar}
+<signed integer> ::= <sign><integer>
 
+<sign> ::= +|-
+
+<integer> ::= <digit>|<digit><integer>
+
+<digit> ::= 0|1|2|3|4|5|6|7|8|9
+\end{grammar}
+
+\solution
+\includegraphics[width=\textwidth]{img/27.png}
 
 \end{document}
