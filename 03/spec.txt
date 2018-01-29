@@ -1,0 +1,27 @@
+Exercise Class Solutions 3
+
+
+# 13 Modeling Computation
+
+
+## 2 Finite-State Machines with Output
+
+9
+
+
+## 3 Finite-State Machines with no Output
+
+1 abcd
+5 abcd
+9 cde
+17
+19
+27
+29
+31
+35
+25
+39
+41
+43
+45
