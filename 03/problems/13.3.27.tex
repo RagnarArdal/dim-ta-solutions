@@ -6,6 +6,50 @@
 Construct a deterministic finite-state automaton that recognizes the set of all bit strings that contain exactly three $0$s.
 
 \solution
-
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (17.8,-24.9) circle (3);
+\draw (17.8,-24.9) node {$s_0$};
+\draw [black] (31.3,-24.9) circle (3);
+\draw (31.3,-24.9) node {$s_1$};
+\draw [black] (45.3,-24.9) circle (3);
+\draw (45.3,-24.9) node {$s_2$};
+\draw [black] (59.3,-24.9) circle (3);
+\draw (59.3,-24.9) node {$s_3$};
+\draw [black] (59.3,-24.9) circle (2.4);
+\draw [black] (59.3,-35.8) circle (3);
+\draw [black] (9.3,-24.9) -- (14.8,-24.9);
+\draw (8.8,-24.9) node [left] {$Start$};
+\fill [black] (14.8,-24.9) -- (14,-24.4) -- (14,-25.4);
+\draw [black] (20.8,-24.9) -- (28.3,-24.9);
+\fill [black] (28.3,-24.9) -- (27.5,-24.4) -- (27.5,-25.4);
+\draw (24.55,-25.4) node [below] {$0$};
+\draw [black] (16.477,-22.22) arc (234:-54:2.25);
+\draw (17.8,-17.65) node [above] {$1$};
+\fill [black] (19.12,-22.22) -- (20,-21.87) -- (19.19,-21.28);
+\draw [black] (29.977,-22.22) arc (234:-54:2.25);
+\draw (31.3,-17.65) node [above] {$1$};
+\fill [black] (32.62,-22.22) -- (33.5,-21.87) -- (32.69,-21.28);
+\draw [black] (34.3,-24.9) -- (42.3,-24.9);
+\fill [black] (42.3,-24.9) -- (41.5,-24.4) -- (41.5,-25.4);
+\draw (38.3,-25.4) node [below] {$0$};
+\draw [black] (43.977,-22.22) arc (234:-54:2.25);
+\draw (45.3,-17.65) node [above] {$1$};
+\fill [black] (46.62,-22.22) -- (47.5,-21.87) -- (46.69,-21.28);
+\draw [black] (48.3,-24.9) -- (56.3,-24.9);
+\fill [black] (56.3,-24.9) -- (55.5,-24.4) -- (55.5,-25.4);
+\draw (52.3,-25.4) node [below] {$0$};
+\draw [black] (57.977,-22.22) arc (234:-54:2.25);
+\draw (59.3,-17.65) node [above] {$1$};
+\fill [black] (60.62,-22.22) -- (61.5,-21.87) -- (60.69,-21.28);
+\draw [black] (59.3,-27.9) -- (59.3,-32.8);
+\fill [black] (59.3,-32.8) -- (59.8,-32) -- (58.8,-32);
+\draw (58.8,-30.35) node [left] {$0$};
+\draw [black] (61.842,-37.371) arc (86.00538:-201.99462:2.25);
+\draw (64.63,-42.02) node [below] {$0,1$};
+\fill [black] (59.6,-38.77) -- (59.04,-39.54) -- (60.04,-39.61);
+\end{tikzpicture}
+\end{center}
 
 \end{document}

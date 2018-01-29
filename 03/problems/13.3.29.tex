@@ -6,6 +6,43 @@
 Construct a deterministic finite-state automaton that recognizes the set of all bit strings that contain three consecutive $1$s.
 
 \solution
-
+\begin{center}
+\begin{tikzpicture}[scale=0.2]
+\tikzstyle{every node}+=[inner sep=0pt]
+\draw [black] (17.8,-24.9) circle (3);
+\draw (17.8,-24.9) node {$s_0$};
+\draw [black] (31.3,-24.9) circle (3);
+\draw (31.3,-24.9) node {$s_1$};
+\draw [black] (45.3,-24.9) circle (3);
+\draw (45.3,-24.9) node {$s_2$};
+\draw [black] (59.3,-24.9) circle (3);
+\draw (59.3,-24.9) node {$s_3$};
+\draw [black] (59.3,-24.9) circle (2.4);
+\draw [black] (9.3,-24.9) -- (14.8,-24.9);
+\draw (8.8,-24.9) node [left] {$Start$};
+\fill [black] (14.8,-24.9) -- (14,-24.4) -- (14,-25.4);
+\draw [black] (28.663,-26.313) arc (-69.21976:-110.78024:11.594);
+\fill [black] (28.66,-26.31) -- (27.74,-26.13) -- (28.09,-27.06);
+\draw (24.55,-27.57) node [below] {$1$};
+\draw [black] (48.3,-24.9) -- (56.3,-24.9);
+\fill [black] (56.3,-24.9) -- (55.5,-24.4) -- (55.5,-25.4);
+\draw (52.3,-25.4) node [below] {$1$};
+\draw [black] (57.977,-22.22) arc (234:-54:2.25);
+\draw (59.3,-17.65) node [above] {$0,1$};
+\fill [black] (60.62,-22.22) -- (61.5,-21.87) -- (60.69,-21.28);
+\draw [black] (34.3,-24.9) -- (42.3,-24.9);
+\fill [black] (42.3,-24.9) -- (41.5,-24.4) -- (41.5,-25.4);
+\draw (38.3,-25.4) node [below] {$1$};
+\draw [black] (18.845,-27.7) arc (48.19934:-239.80066:2.25);
+\draw (16.92,-32.2) node [below] {$0$};
+\fill [black] (16.21,-27.43) -- (15.31,-27.7) -- (16.05,-28.36);
+\draw [black] (20.273,-23.222) arc (115.50048:64.49952:9.934);
+\fill [black] (20.27,-23.22) -- (21.21,-23.33) -- (20.78,-22.43);
+\draw (24.55,-21.75) node [above] {$0$};
+\draw [black] (18.561,-22.004) arc (159.08853:20.91147:13.905);
+\fill [black] (18.56,-22) -- (19.31,-21.44) -- (18.38,-21.08);
+\draw (31.55,-12.56) node [above] {$0$};
+\end{tikzpicture}
+\end{center}
 
 \end{document}
