@@ -1,0 +1,18 @@
+Exercise Class Solutions 3
+
+
+# 13 Modeling Computation
+
+
+## 3 Finite-State Machines with no Output
+
+49
+
+
+## 4 Language Recognition
+
+1 bdf
+5 abcde
+7 abcd
+14 ac
+17
