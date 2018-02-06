@@ -35,6 +35,9 @@ MAIN_PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \usepackage{mathtools}
 \usepackage{amssymb}
 
+\usepackage{tikz}
+\usepackage{graphicx}
+
 \newcommand{\chapter}[2]{%
 \setcounter{section}{#1-1}%
 \section{#2}%
