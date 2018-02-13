@@ -1,0 +1,10 @@
+Exercise Class Solutions 5
+
+
+# 1 Systems of Linear Equations
+
+
+## 2 Gaussian Elimination
+
+4 bdf
+5 bdf
