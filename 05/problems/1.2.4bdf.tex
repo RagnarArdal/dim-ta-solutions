@@ -2,6 +2,13 @@
 
 \begin{document}
 
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+   \hskip -\arraycolsep
+   \let\@ifnextchar\new@ifnextchar
+   \array{#1}}
+\makeatother
+
 \problem{4}
 Find all solutions (if any) to each of the following systems of linear equations.
 \begin{enumerate}[a)]
@@ -28,11 +35,69 @@ Find all solutions (if any) to each of the following systems of linear equations
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item Subtract the second equation from the first
+		\begin{align*}
+			1x + 2y &= -1 \\
+			2x - 3y &= 1
+		\end{align*}
+		Subtract the first equation twice from the second
+		\begin{align*}
+			1x + 2y &= -1 \\
+			0x - 7y &= 3
+		\end{align*}
+		Multiply the second equation by a negative seventh
+		\begin{align*}
+			1x + 2y &= -1 \\
+			0x + 1y &= -3/7
+		\end{align*}
+		Subtract the second equation twice from the first
+		\begin{align*}
+			1x + 0y &= -1/7 \\
+			0x + 1y &= -3/7
+		\end{align*}
+		From this system of equations we can readily read that $x = -1/7$ and $y = -3/7$.
 	\setcounter{enumi}{3}
 	\item 
+		Take the system of equations
+		\begin{align*}
+			3x - y &= 2 \\
+			2y - 6x &= -4
+		\end{align*}
+		Translate them to augmented matrix
+		$$\left[\begin{array}{cc|c}
+			3 & -1 & 2 \\
+			-6 & 2 & -4
+		\end{array}\right]$$
+		Add the first row to the second twice
+		$$\left[\begin{array}{cc|c}
+			3 & -1 & 2 \\
+			0 & 0 & 0
+		\end{array}\right]$$
+		We see that $3x - y = 2$.
+		Then $y = s$ and $x = (2 + s)/3$ is a solution for all $s \in \RR$.
 	\setcounter{enumi}{5}
 	\item 
+		Take the system of equations
+		\begin{align*}
+			2x - 3y &= 5 \\
+			3y - 2x &= 2
+		\end{align*}
+		Translate them to augmented matrix
+		$$\left[\begin{array}{cc|c}
+			2 & -3 & 5 \\
+			-2 & 3 & 2
+		\end{array}\right]$$
+		Add the first row to the second
+		$$\left[\begin{array}{cc|c}
+			2 & -3 & 5 \\
+			0 & 0 & 8
+		\end{array}\right]$$
+		Multiply the second equation by an eight
+		$$\left[\begin{array}{cc|c}
+			2 & -3 & 5 \\
+			0 & 0 & 1
+		\end{array}\right]$$
+		Since we have encountered a row of the form $\left[\begin{array}{ccc|c}0&\cdots&0&1\end{array}\right]$, the system of equations is inconsistent and therefore there is no solution.
 \end{enumerate}
 
 \end{document}
