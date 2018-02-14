@@ -24,7 +24,7 @@ Note that this is an ``inclusive OR''.
 
 \solution
 \begin{enumerate}[a)]
-	\item \hfill
+	\item \hfill  % a
 		\begin{center}
 		\begin{tikzpicture}[scale=0.2]
 		\tikzstyle{every node}+=[inner sep=0pt]
@@ -63,14 +63,14 @@ Note that this is an ``inclusive OR''.
 		\fill [black] (42.9,-19.83) -- (43.43,-20.61) -- (43.83,-19.7);
 		\end{tikzpicture}
 		\end{center}
-	\item $\mathbf{(a(a \cup b)^\ast) \cup ((a \cup b)^\ast b)}$
-	\item  
+	\item $\mathbf{(a(a \cup b)^\ast) \cup ((a \cup b)^\ast b)}$  % b
+	\item  % c
 		$S \rightarrow aR$\\
 		$S \rightarrow Rb$\\
 		$R \rightarrow aR$\\
 		$R \rightarrow bR$\\
 		$R \rightarrow \lambda$
-	\item \hfill
+	\item \hfill  % d
 		\begin{center}
 		\begin{tikzpicture}[scale=0.2]
 		\tikzstyle{every node}+=[inner sep=0pt]
@@ -118,7 +118,8 @@ Note that this is an ``inclusive OR''.
 		\end{tikzpicture}
 		\end{center}	
 	\pagebreak
-	\item %We make the following changes
+	\item % e
+		%We make the following changes
 		%\begin{itemize}
 		%	\item $S_1$ and $S_2$ are not accepting states.
 		%	\item $S_4$ is not an initial state.
@@ -147,6 +148,9 @@ Note that this is an ``inclusive OR''.
 		\draw (42.8,-5.8) node {$s_3$};
 		\draw [black] (14.6,-19) circle (3);
 		\draw (14.6,-19) node {$s_1$};
+		\draw [black] (15.923,-21.78) arc (54:-234:2.25);
+		\draw (14.6,-26.25) node [below] {$a,b$};
+		\fill [black] (13.28,-21.78) -- (12.4,-22.13) -- (13.21,-22.72);
 		\draw [black] (26.6,-21.04) -- (16.8,-30.16);
 		\fill [black] (16.8,-30.16) -- (17.72,-29.98) -- (17.04,-29.25);
 		\draw (20.68,-25.11) node [above] {$b$};
@@ -209,7 +213,7 @@ Note that this is an ``inclusive OR''.
 		\end{tikzpicture}
 		\end{center}
 	\pagebreak
-	\item \hfill
+	\item \hfill  % f
 		   \begin{center}
 		\begin{tikzpicture}[scale=0.2]
 		\tikzstyle{every node}+=[inner sep=0pt]
@@ -299,7 +303,7 @@ Note that this is an ``inclusive OR''.
 		\end{tikzpicture}
 		\end{center} 
 	\pagebreak
-    \item \hfill
+    \item \hfill  % g
 \begin{center}
 		\begin{tikzpicture}[scale=0.2]
 		\tikzstyle{every node}+=[inner sep=0pt]
@@ -316,6 +320,7 @@ Note that this is an ``inclusive OR''.
 		\draw [black] (28.8,-45.7) circle (3);
 		\draw (28.8,-45.7) node {$s_8$};
 		\draw [black] (28.8,-6.4) circle (3);
+		\draw [black] (28.8,-6.4) circle (2.4);
 		\draw (28.8,-6.4) node {$s_{10}$};
 		\draw [black] (25.8,-32.2) -- (17.6,-32.2);
 		\fill [black] (17.6,-32.2) -- (18.4,-32.7) -- (18.4,-31.7);
