@@ -1,0 +1,30 @@
+Exercise Class Solutions 6
+
+
+# 1 Systems of Linear Equations
+
+
+## 2 Gaussian Elimination
+
+16 b
+
+
+# 2 Matrix Algebra
+
+
+## 1 Matrix Addition, Scalar Multiplication, and Transposition
+
+2 b
+3 f
+4 b
+
+## 2 Matrix Multiplication
+
+7 b
+
+## 3 Matrix Inverses
+
+1 ac
+2 bd
+3 b
+4 a

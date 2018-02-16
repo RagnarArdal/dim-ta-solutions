@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{enumerate}
+\usepackage{subfiles}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand{\chapter}[2]{%
+\setcounter{section}{#1-1}%
+\section{#2}%
+}
+
+\newcommand{\subchapter}[2]{%
+\setcounter{subsection}{#1-1}%
+\subsection{#2}%
+}
+
+\newcommand{\problem}[1]{%
+\setcounter{subsubsection}{#1-1}%
+\subsubsection{\hfill}%
+}
+
+\newcommand{\solution}{%
+\subsubsection*{Solution}%
+}
+
+% Misc math operators
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% Operators for predicate logic
+
+\DeclareMathOperator{\T}{\text{\textbf T}}
+\DeclareMathOperator{\F}{\text{\textbf F}}
+\DeclareMathOperator{\lthen}{\to}
+\DeclareMathOperator{\limplies}{\to}
+\DeclareMathOperator{\lwhen}{\gets}
+\DeclareMathOperator{\lif}{\gets}
+\DeclareMathOperator{\liff}{\leftrightarrow}
+\DeclareMathOperator{\lxor}{\oplus}
+
+% Sets
+
+\DeclarePairedDelimiter{\set}
+	{\lbrace}
+	{\rbrace}
+\DeclareMathOperator{\ZZ}{\mathbb{Z}}
+\DeclareMathOperator{\SetOfIntegers}{\ZZ}
+\DeclareMathOperator{\ZZPos}{\mathbb{Z}^+}
+\DeclareMathOperator{\SetOfPositiveIntegers}{\ZZPos}
+\DeclareMathOperator{\NN}{\mathbb{N}}
+\DeclareMathOperator{\SetOfNaturalNumbers}{\NN}
+\DeclareMathOperator{\RR}{\mathbb{R}}
+\DeclareMathOperator{\SetOfRealNumbers}{\RR}
+\DeclareMathOperator{\RRPos}{\mathbb{R}^+}
+\DeclareMathOperator{\SetOfPositiveRealNumbers}{\RRPos}
+\DeclareMathOperator{\QQ}{\mathbb{Q}}
+\DeclareMathOperator{\SetOfRationalNumbers}{\QQ}
+\DeclareMathOperator{\CC}{\mathbb{C}}
+\DeclareMathOperator{\SetOfComplexNumbers}{\CC}
+
+\begin{document}
+
+\title{Exercise Class Solutions 6}
+\date{}
+\author{}
+\maketitle
+
+\chapter{1}{Systems of Linear Equations}
+	\subchapter{2}{Gaussian Elimination}
+		\subfile{problems/1.2.16b.tex}
+\chapter{2}{Matrix Algebra}
+	\subchapter{1}{Matrix Addition, Scalar Multiplication, and Transposition}
+		\subfile{problems/2.1.2b.tex}
+		\subfile{problems/2.1.3f.tex}
+		\subfile{problems/2.1.4b.tex}
+	\subchapter{2}{Matrix Multiplication}
+		\subfile{problems/2.2.7b.tex}
+	\subchapter{3}{Matrix Inverses}
+		\subfile{problems/2.3.1ac.tex}
+		\subfile{problems/2.3.2bd.tex}
+		\subfile{problems/2.3.3b.tex}
+		\subfile{problems/2.3.4a.tex}
+
+\end{document}
