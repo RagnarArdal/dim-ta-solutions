@@ -1,0 +1,29 @@
+Exercise Class Solutions 7
+
+
+# 2 Matrix Algebra
+
+
+## 5 Matrix Transformations
+
+1 bd
+2 b
+3 bd
+4
+12 bdf
+14
+
+
+# 4 Vector Geometry
+
+
+## 1 Vectors and Lines
+
+1 b
+2 b
+4 d
+7 b
+9 b
+11 b
+22 bdf
+23 b
