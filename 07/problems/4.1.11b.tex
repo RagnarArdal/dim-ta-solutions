@@ -4,9 +4,9 @@
 
 \problem{11}
 Let
-$\vec{u} = \begin{bmatrix}3&-1&0\end{bmatrix}$,
-$\vec{v} = \begin{bmatrix}4&0&1\end{bmatrix}$, and
-$\vec{w} = \begin{bmatrix}-1&1&5\end{bmatrix}$.
+$\vec{u} = \begin{bmatrix}3&-1&0\end{bmatrix}^T$,
+$\vec{v} = \begin{bmatrix}4&0&1\end{bmatrix}^T$, and
+$\vec{w} = \begin{bmatrix}-1&1&5\end{bmatrix}^T$.
 In each case, find $\vec{x}$ such that:
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
@@ -17,6 +17,16 @@ In each case, find $\vec{x}$ such that:
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
 	\item 
+		\begin{align*}
+			&& 2(3\vec{v} - \vec{x}) &= 5\vec{w} + \vec{u} - 3\vec{x} \\
+			\Rightarrow && 6\vec{v} - 2\vec{x} &= 5\vec{w} + \vec{u} - 3\vec{x} \\
+			\Rightarrow && 3\vec{x} - 2\vec{x} &= 5\vec{w} + \vec{u} - 6\vec{v} \\
+			\Rightarrow && \vec{x} &= 5\vec{w} + \vec{u} - 6\vec{v} \\
+			\Rightarrow && \vec{x} &= 5\begin{bmatrix}-1\\1\\5\end{bmatrix} + \begin{bmatrix}3\\-1\\0\end{bmatrix} - 6\begin{bmatrix}4\\0\\1\end{bmatrix} \\
+			\Rightarrow && \vec{x} &= \begin{bmatrix}-5\\5\\25\end{bmatrix} + \begin{bmatrix}3\\-1\\0\end{bmatrix} - \begin{bmatrix}24\\0\\6\end{bmatrix} \\
+			\Rightarrow && \vec{x} &= \begin{bmatrix}-5 + 3 - 24\\5 - 1\\25 - 6\end{bmatrix} \\
+			\Rightarrow && \vec{x} &= \begin{bmatrix}-26\\4\\19\end{bmatrix} \\
+		\end{align*}
 \end{enumerate}
 
 \end{document}

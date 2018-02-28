@@ -14,9 +14,28 @@ Give the matrix of the transformation $T$ in each case:
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item This transformation carries the vector $\begin{bmatrix}x&y\end{bmatrix}^T$ to $\begin{bmatrix}-y&-x\end{bmatrix}^T$. Now observe that
+		\[
+			\begin{bmatrix}-y\\-x\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]0&-1\\-1&0\end{bmatrix*}
+			\begin{bmatrix}x\\y\end{bmatrix} \\
+		\]
+		so the $2\times2$ matrix is the matrix of the transformation $T$.
 	\setcounter{enumi}{3}
-	\item 
+	\item By Example 5 we have that
+		\[
+			R_{-\pi/2} = 
+			\begin{bmatrix*}[r]
+				\cos{-\pi/2} & -\sin{-\pi/2} \\
+				\sin{-\pi/2} & \cos{-\pi/2}
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				0 & 1 \\
+				-1 & 0
+			\end{bmatrix*}
+		\]
 \end{enumerate}
 
 \end{document}

@@ -16,11 +16,65 @@ In each case find a rotation or reflection that equals the given transformation.
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item It is equal to reflection in the $Y$ axis:
+		\[
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			\begin{bmatrix*}[r]
+				\cos{\pi} & -\sin{\pi} \\
+				\sin{\pi} & \cos{\pi}
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			\begin{bmatrix*}[r]
+				-1 & 0 \\
+				0 & -1
+			\end{bmatrix*}
+			=
+			\cdots
+			=
+			\begin{bmatrix*}[r]
+				-1 & 0 \\
+				0 & 1
+			\end{bmatrix*}
+		\]
 	\setcounter{enumi}{3}
-	\item 
+	\item It is equal to the reflection in the line $y = x$:
+		\[
+			\begin{bmatrix*}[r]
+				\cos{(\pi/2)} & -\sin{(\pi/2)} \\
+				\sin{(\pi/2)} & \cos{(\pi/2)}
+			\end{bmatrix*}
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				0 & -1 \\
+				1 & 0
+			\end{bmatrix*}
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			=
+			\cdots
+			=
+			\begin{bmatrix*}[r]
+				0 & 1 \\
+				1 & 0
+			\end{bmatrix*}
+		\]
 	\setcounter{enumi}{5}
-	\item 
+	\item It is equal to rotation through $\pi/2$:
+		\[
+			\begin{bmatrix}0&1\\1&0\end{bmatrix}
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			=
+			\begin{bmatrix}0&1\\1&0\end{bmatrix}
+			\begin{bmatrix*}[r]1&0\\0&-1\end{bmatrix*}
+			=
+			\cdots
+			=
+			\begin{bmatrix*}[r]
+				0 & -1 \\
+				1 & 0
+			\end{bmatrix*}
+		\]
 \end{enumerate}
 
 \end{document}

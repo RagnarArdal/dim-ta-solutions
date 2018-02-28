@@ -3,14 +3,94 @@
 \begin{document}
 
 \problem{3}
-If $T: \RR^2 \to \RR^2$ is as in $(b)$ and $(d)$ of Exercise 1, find $T(\begin{bmatrix}1&1\end{bmatrix}^T)$ and $T(\begin{bmatrix}2&-1\end{bmatrix}^T)$.
+If $T: \RR^2 \to \RR^2$ is as in $(b)$ and $(d)$ of Exercise 1, find $T\left(\begin{bmatrix}1&1\end{bmatrix}^T\right)$ and $T\left(\begin{bmatrix}2&-1\end{bmatrix}^T\right)$.
 
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
 	\item 
+		\[
+			%T\left(\begin{bmatrix}1&1\end{bmatrix}^T\right)
+			%=
+			\begin{bmatrix*}[r]0&-1\\-1&0\end{bmatrix*}
+			\begin{bmatrix}1\\1\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0\cdot1 + (-1)\cdot1 \\
+				(-1)\cdot1 + 0\cdot1
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0 - 1 \\
+				(-1) + 0
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				-1 \\
+				-1
+			\end{bmatrix}
+		\]
+		\[
+			%T\left(\begin{bmatrix}2&-1\end{bmatrix}^T\right)
+			%=
+			\begin{bmatrix*}[r]0&-1\\-1&0\end{bmatrix*}
+			\begin{bmatrix*}[r]2\\-1\end{bmatrix*}
+			=
+			\begin{bmatrix}
+				0\cdot2 + (-1)\cdot(-1) \\
+				(-1)\cdot2 + 0\cdot(-1)
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0 + 1 \\
+				(-2) + 0
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				1 \\
+				-2
+			\end{bmatrix*}
+		\]
 	\setcounter{enumi}{3}
 	\item 
+		\[
+			\begin{bmatrix*}[r]0&1\\-1&0\end{bmatrix*}
+			\begin{bmatrix}1\\1\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0\cdot1 + 1\cdot1 \\
+				(-1)\cdot1 + 0\cdot1
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0 + 1 \\
+				(-1) + 0
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				1 \\
+				-1
+			\end{bmatrix*}
+		\]
+		\[
+			\begin{bmatrix*}[r]0&1\\-1&0\end{bmatrix*}
+			\begin{bmatrix*}[r]2\\-1\end{bmatrix*}
+			=
+			\begin{bmatrix}
+				0\cdot2 + 1\cdot(-1) \\
+				(-1)\cdot2 + 0\cdot(-1)
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				0 - 1 \\
+				(-2) + 0
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				-1 \\
+				-2
+			\end{bmatrix*}
+		\]
 \end{enumerate}
 
 \end{document}

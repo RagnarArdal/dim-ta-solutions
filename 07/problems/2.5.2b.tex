@@ -6,13 +6,48 @@
 In each case show that $T: \RR^2 \to \RR^2$ is not a linear transformation:
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item $T(\begin{bmatrix}x&y\end{bmatrix}^T) = \begin{bmatrix}0&y^2\end{bmatrix}^T$.
+	\item $T\left(\begin{bmatrix}x&y\end{bmatrix}^T\right) = \begin{bmatrix}0&y^2\end{bmatrix}^T$.
 \end{enumerate}
 
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item It is not a linear transformation because it does not preserve scalar multiplication; e.g.,
+		\[
+			T\left(
+			2
+			\begin{bmatrix*}[r]
+				0 & 1
+			\end{bmatrix*}^T
+			\right)
+			=
+			T\left(
+			\begin{bmatrix*}[r]
+				0 & 2
+			\end{bmatrix*}^T
+			\right)
+			=
+			\begin{bmatrix*}[r]
+				0 & 4
+			\end{bmatrix*}^T
+		\]
+		\[
+			2
+			T\left(
+			\begin{bmatrix*}[r]
+				0 & 1
+			\end{bmatrix*}^T
+			\right)
+			=
+			2
+			\begin{bmatrix*}[r]
+				0 & 1
+			\end{bmatrix*}^T
+			=
+			\begin{bmatrix*}[r]
+				0 & 2
+			\end{bmatrix*}^T
+		\]
 \end{enumerate}
 
 \end{document}
