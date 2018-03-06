@@ -199,9 +199,121 @@ Find the equation of each of the following planes.
 			2x + 3y + 2z = 7
 		\]
 	\setcounter{enumi}{7}
-	\item 
+	\item The normal of the plane is the cross product of the two direction vectors
+		\[
+			\begin{bmatrix*}[r]1\\-1\\3\end{bmatrix*}
+			\times
+			\begin{bmatrix*}[r]2\\1\\-1\end{bmatrix*}
+			=
+			\begin{bmatrix}
+				(-1)\cdot(-1) - 3\cdot1 \\
+				-(1\cdot(-1) - 3\cdot2) \\
+				1\cdot1 - (-1)\cdot2
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				1 - 3 \\
+				-((-1) - 6) \\
+				1 - (-2)
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]-2\\7\\3\end{bmatrix*}
+		\]
+		and, using a point on either line, the plane is given by
 	\setcounter{enumi}{9}
+		\[
+			\begin{bmatrix*}[r]
+				-2 \\
+				7 \\
+				3
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				x \\
+				y \\
+				z
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				-2 \\
+				7 \\
+				3
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				3 \\
+				1 \\
+				0
+			\end{bmatrix*}
+			\Rightarrow
+			-2x + 7y + 3z = 1
+		\]
 	\item 
+		The normal of the plane is
+		\[
+			\overrightarrow{PQ}
+			=
+			Q - P
+			=
+			\begin{bmatrix}
+				2 - 0 & -1 - 1 & -3 - (-1)
+			\end{bmatrix}^T
+			=
+			\begin{bmatrix}
+				2 & -2 & -2
+			\end{bmatrix}^T
+		\]
+		and the mid point between $P$ and $Q$
+		\[
+			P + \frac{1}{2}\|\overrightarrow{PQ}\|
+			=
+			\begin{bmatrix*}[r]
+				0 \\
+				1 \\
+				-1
+			\end{bmatrix*}
+			+
+			\begin{bmatrix*}[r]
+				1 \\
+				-1 \\
+				-1
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				1 \\
+				0 \\
+				-2
+			\end{bmatrix*}
+		\]
+		is on the plane.
+		Thus the plane is given by
+		\[
+			\begin{bmatrix*}[r]
+				2 \\
+				-2 \\
+				-2
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				x \\
+				y \\
+				z
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				2 \\
+				-2 \\
+				-2
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				1 \\
+				0 \\
+				-2
+			\end{bmatrix*}
+			\Rightarrow
+			2x - 2y - 2z = 6
+		\]
 \end{enumerate}
 
 \end{document}
