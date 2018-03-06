@@ -14,7 +14,38 @@ Find the angle between the following pairs of vectors.
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item Let $\theta$ be the angle.
+		Compute the dot product of the vectors
+		\[
+			\vec{u}\cdot\vec{v}
+			=
+			3\cdot(-6) + (-1)\cdot2 + 0\cdot0
+			=
+			-18 - 2
+			=
+			-20
+		\]
+		and observe that as a consequence of it being negative, the angle between them is obtuse.
+		Now compute the lengths of the vectors
+		\[
+			\|\vec{u}\| = \sqrt{3^2 + (-1)^2 + 0^2} = \sqrt{9 + 1 + 0} = \sqrt{10}
+		\]
+		\[
+			\|\vec{v}\| = \sqrt{(-6)^2 + 2^2 + 0^2} = \sqrt{36 + 40 + 0} = \sqrt{40}
+		\]
+		and use these values to calculate the angle
+		\begin{align*}
+		\theta &= \cos^{-1}\left(\frac{\vec{u}\cdot\vec{v}}{\|\vec{u}\|\|\vec{v}\|}\right)
+			\\
+			&= \cos^{-1}\left(\frac{-20}{\sqrt{10}\sqrt{40}}\right)
+			\\
+			&= \cos^{-1}\left(\frac{-20}{\sqrt{400}}\right)
+			\\
+			&= \cos^{-1}\left(\frac{-20}{20}\right)
+			\\
+			&= \cos^{-1}\left(-1\right)
+		\end{align*}
+		which tells us that the angle between the two vectors is $\pi$. This is easily confirmed, as \(\vec{v} = -2\vec{u}\).
 \end{enumerate}
 
 \end{document}

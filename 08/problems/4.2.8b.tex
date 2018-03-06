@@ -12,7 +12,54 @@ Find the three internal angles of the triangle with vertices:
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item Compute the vectors of the triangle's three edges
+		\[
+			\overrightarrow{AB}
+			=
+			\begin{bmatrix}
+				5 - 3 \\
+				2 - 1 \\
+				(-1) - (-2)
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				2 \\
+				1 \\
+				1
+			\end{bmatrix}
+		\]
+		\[
+			\overrightarrow{AC}
+			=
+			\begin{bmatrix}
+				4 - 3 \\
+				3 - 1 \\
+				(-3) - (-2)
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				1 \\
+				2 \\
+				-1
+			\end{bmatrix*}
+		\]
+		\[
+			\overrightarrow{BC}
+			=
+			\begin{bmatrix}
+				4 - 5 \\
+				3 - 2 \\
+				(-3) - (-1)
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				-1 \\
+				1 \\
+				-2
+			\end{bmatrix*}
+		\]
+		and observe they all have length $\sqrt{6}$.
+		Thus it is an equilateral triangle and all the angles are an equal $\pi/3$.
 \end{enumerate}
 
 \end{document}

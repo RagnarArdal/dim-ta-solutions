@@ -42,9 +42,89 @@ Find the equation of each of the following planes.
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item The normal of the plane is the cross product of any two vectors making use of all three points
+		\begin{align*}
+			\overrightarrow{BA}\times\overrightarrow{BC}
+			&=
+			\begin{bmatrix*}[r]1\\-1\\5\end{bmatrix*}
+			\times
+			\begin{bmatrix*}[r]4\\7\\-12\end{bmatrix*}
+			\\&=
+			\begin{bmatrix}
+				(-1)\cdot(-12) - 5\cdot7 \\
+				-(1\cdot(-12) - 5\cdot4) \\
+				1\cdot7 - (-1)\cdot4
+			\end{bmatrix}
+			\\&=
+			\begin{bmatrix}
+				12 - 35 \\
+				-((-12) - 20) \\
+				7 + 4
+			\end{bmatrix}
+			\\&=
+			\begin{bmatrix*}[r]
+				-23 \\
+				32 \\
+				11
+			\end{bmatrix*}
+		\end{align*}
+		and the plane is given by
+		\[
+			\begin{bmatrix*}[r]
+				-23 \\
+				32 \\
+				11
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				x \\
+				y \\
+				z
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				-23 \\
+				32 \\
+				11
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				0 \\
+				0 \\
+				11
+			\end{bmatrix*}
+			\Rightarrow
+			-23x + 32y + 11z = 11
+		\]
 	\setcounter{enumi}{3}
-	\item 
+	\item The plane has normal $\begin{bmatrix}2&-1&1\end{bmatrix}^T$ so it is given by
+		\[
+			\begin{bmatrix*}[r]
+				2 \\
+				-1 \\
+				1
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				x \\
+				y \\
+				z
+			\end{bmatrix*}
+			=
+			\begin{bmatrix*}[r]
+				2 \\
+				-1 \\
+				1
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix*}[r]
+				3 \\
+				0 \\
+				-1
+			\end{bmatrix*}
+			\Rightarrow
+			2x - y + z = 5
+		\]
 	\setcounter{enumi}{5}
 	\item 
 	\setcounter{enumi}{7}

@@ -14,7 +14,36 @@ In each case, compute the projection of $\vec{u}$ on $\vec{v}$.
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item We need the dot product
+		\[
+			\vec{u}\cdot\vec{v}
+			=
+			3\cdot4 + (-2)\cdot1 + 1\cdot1
+			=
+			12 + (-2) + 1
+			=
+			11
+		\]
+		and the length of $\vec{v}$
+		\[
+			\|\vec{v}\|
+			=
+			\sqrt{4^2 + 1^2 + 1^2}
+			=
+			\sqrt{16 + 1 + 1}
+			=
+			\sqrt{18}
+		\]
+		and then we can compute
+		\[
+			\proj_{\vec{v}}\vec{u}
+			=
+			\frac{\vec{u}\cdot\vec{v}}{\|\vec{v}\|^2}\vec{v}
+			=
+			\frac{11}{\sqrt{18}^2}\vec{v}
+			=
+			\frac{11}{18}\vec{v}
+		\]
 \end{enumerate}
 
 \end{document}
