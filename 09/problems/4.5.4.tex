@@ -7,5 +7,31 @@ Find the $3 \times 3$ matrix for rotating through the angle $\theta$ about the p
 
 \solution
 
+We will need to use homogenous coordinates and translate the point $P(a,b)$ to be the origin, 
+rotate the origin by $\theta$ and then translate back by $P(a,b)$. 
+
+\[
+    R = \begin{bmatrix}
+            1 & 0 & a\\
+            0 & 1 & b\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+            \cos \theta & - \sin \theta & 0\\
+            \sin \theta & \cos \theta & 0\\
+            0 & 0 & 1
+        \end{bmatrix}
+        \begin{bmatrix}
+            1 & 0 & -a\\
+            0 & 1 & -b\\
+            0 & 0 & 1
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            \cos \theta & -\sin\theta & a(-\cos\theta+1)+b\sin\theta\\
+            \sin\theta & \cos\theta & b(-\cos\theta+1)-a\sin\theta\\
+            0&0&1
+        \end{bmatrix}
+\]
 
 \end{document}

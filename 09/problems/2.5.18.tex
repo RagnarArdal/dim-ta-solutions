@@ -16,6 +16,37 @@ The reflection in $L$ has matrix
 	\end{bmatrix}.
 \]
 Show that $m = \sin\theta/\cos\theta = \tan\theta$ yields the formula of Example 10.
+
 \solution
 
+We start by replacing $m$ with $\tan\theta$. Notice that the slope for a line going through the
+origin with angle $\theta$ is given by $\tan\theta$.
+
+\[
+
+    Q = \frac{1}{1+\tan^2\theta}
+        \begin{bmatrix}
+            1 - \tan^2\theta & 2\tan\theta\\
+            2\tan\theta & \tan^2\theta-1
+        \end{bmatrix}
+\]
+
+We can then use trigonometric identities for double-angles
+
+\[
+    \frac{1-\tan^2\theta}{1+\tan^2\theta} = \cos2\theta
+\]
+and
+\[
+    \frac{2\tan\theta}{1+\tan^2\theta} = \sin2\theta
+\]
+
+to get
+
+\[ Q = \begin{bmatrix}
+            \cos2\theta & \sin2\theta\\
+            \sin2\theta & -\cos2\theta
+        \end{bmatrix}
+\]
+which is the same as the formula given in Example 10.
 \end{document}
