@@ -7,12 +7,91 @@ Consider the letter $A$ described in Figure 4.41.
 Find the data matrix for the letter obtained by:
 \begin{enumerate}[a)]
 	\item Rotating the letter through \(\frac{\pi}{4}\) about the origin.
-	\item Rotating the ltter through \(\frac{\pi}{4}\) about the point \(\begin{bmatrix}1\\2\end{bmatrix}\).
+	\item Rotating the letter through \(\frac{\pi}{4}\) about the point \(\begin{bmatrix}1\\2\end{bmatrix}\).
 \end{enumerate}
 
 \solution
 \begin{enumerate}[a)]
-	\item 
+	\item The data matrix for the letter is
+		\[
+			D
+			=
+			\begin{bmatrix}
+				0 & 6 & 5 & 1 & 3 \\
+				0 & 0 & 3 & 3 & 9 \\
+			\end{bmatrix}
+		\]
+		so we rotate it as we have done before
+		\begin{align*}
+			R_{\pi/4}D
+			&=
+			\begin{bmatrix}
+				\cos\frac{\pi}{4} & -\sin\frac{\pi}{4} \\
+				\sin\frac{\pi}{4} & \cos\frac{\pi}{4} \\
+			\end{bmatrix}
+			D
+			\\&=
+			\begin{bmatrix}
+				\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+				\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				0 & 6 & 5 & 1 & 3 \\
+				0 & 0 & 3 & 3 & 9 \\
+			\end{bmatrix}
+			\\&=
+			\begin{bmatrix}
+				\frac{1}{\sqrt{2}} & 0 \\
+				0 & \frac{1}{\sqrt{2}} \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				1 & -1 \\
+				1 & 1 \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				0 & 6 & 5 & 1 & 3 \\
+				0 & 0 & 3 & 3 & 9 \\
+			\end{bmatrix}
+			\\&=
+			\begin{bmatrix}
+				\frac{1}{\sqrt{2}} & 0 \\
+				0 & \frac{1}{\sqrt{2}} \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				1\cdot0 + (-1)\cdot0 & 1\cdot0 + 1\cdot0 \\
+				1\cdot6 + (-1)\cdot0 & 1\cdot6 + 1\cdot0 \\
+				1\cdot5 + (-1)\cdot3 & 1\cdot5 + 1\cdot3 \\
+				1\cdot1 + (-1)\cdot3 & 1\cdot1 + 1\cdot3 \\
+				1\cdot3 + (-1)\cdot9 & 1\cdot3 + 1\cdot9 \\
+			\end{bmatrix}^T
+			\\&=
+			\begin{bmatrix}
+				\frac{1}{\sqrt{2}} & 0 \\
+				0 & \frac{1}{\sqrt{2}} \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				0 + 0 & 0 + 0 \\
+				6 + 0 & 6 + 0 \\
+				5 - 3 & 5 + 3 \\
+				1 - 3 & 1 + 3 \\
+				3 - 9 & 3 + 9 \\
+			\end{bmatrix}^T
+			\\&=
+			\begin{bmatrix}
+				\frac{1}{\sqrt{2}} & 0 \\
+				0 & \frac{1}{\sqrt{2}} \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				0 & 6 & -3 & -2 & -6 \\
+				0 & 6 & 8 & 4 & 12 \\
+			\end{bmatrix}
+			\\&=
+			\frac{1}{\sqrt{2}}
+			\begin{bmatrix}
+				0 & 6 & -3 & -2 & -6 \\
+				0 & 6 & 8 & 4 & 12 \\
+			\end{bmatrix}
+		\end{align*}
 	\item 
 \end{enumerate}
 
