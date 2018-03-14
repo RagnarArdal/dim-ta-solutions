@@ -10,8 +10,108 @@
 
 \solution
 \begin{enumerate}[a)]
-	\item 
-	\item 
+	\item No, even though the point $P(1, 2, -3)$ is on the plane since $2\cdot1 - 1\cdot2 - 1\cdot(-3) = 2 - 2 + 3 = 3$, we see that the dot product of the line's direction vector with the normal of the plane is
+		\[
+			\begin{bmatrix}1&2&-3\end{bmatrix}^T
+			\cdot
+			\begin{bmatrix}2&-1&-1\end{bmatrix}^T
+			=
+			1\cdot2 + 2\cdot(-1) + (-3)\cdot(-1)
+			=
+			1 - 2 + 3
+			=
+			2
+		\]
+		so they are not orthogonal and thus the line cannot lie in the plane.
+	\item Start by computing the normal of the plane
+		\[
+			\overrightarrow{QP}
+			=
+			\begin{bmatrix}
+				4 - 2 \\
+				0 - 2 \\
+				5 - 1 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				2 \\
+				-2 \\
+				4 \\
+			\end{bmatrix*}
+			,
+			\overrightarrow{RP}
+			=
+			\begin{bmatrix}
+				4 - 1 \\
+				0 - (-1) \\
+				5 - 2 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				3 \\
+				1 \\
+				3 \\
+			\end{bmatrix*}
+		\]
+		\[
+			\vec{n}
+			=
+			\overrightarrow{QP}
+			\times
+			\overrightarrow{RP}
+			=
+			\begin{bmatrix}
+				(-2)\cdot3 - 4\cdot1 \\
+				-(2\cdot3 - 4\cdot3) \\
+				2\cdot1 - (-2)\cdot3 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix}
+				-6 - 4 \\
+				-(6 - 12) \\
+				2 - (-6) \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				-10 \\
+				6 \\
+				8 \\
+			\end{bmatrix*}
+		\]
+		which gives us the equation of the plane
+		\[
+			\begin{bmatrix*}[r]
+				-10 \\
+				6 \\
+				8 \\
+			\end{bmatrix*}
+			\cdot
+			\begin{bmatrix}
+				x \\
+				y \\
+				z \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				-10 \\
+				6 \\
+				8 \\
+			\end{bmatrix*}
+			\begin{bmatrix}
+				2 \\
+				2 \\
+				1 \\
+			\end{bmatrix}
+			\Rightarrow
+			-10x + 6y + 8z
+			=
+			0.
+		\]
+		When we plug the origin into the equation of the plane we get
+		\[
+			-10\cdot0 + 6\cdot0 + 8\cdot0 = 0 + 0 + 0 = 0
+		\]
+		so the plane does indeed pass through the origin.
 \end{enumerate}
 
 \end{document}

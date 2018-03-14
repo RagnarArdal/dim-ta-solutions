@@ -22,9 +22,56 @@ In each case, find all points of intersection of the given plane and the line \\
 \solution
 \begin{enumerate}[a)]
 	\setcounter{enumi}{1}
-	\item 
+	\item Plugging the equation of the line into the equation of the plane makes it evident that the line does not intersect the plane:
+		\[
+			2(1 + 2t) - (-2 + 5t) - (3 - t)
+			=
+			2 + 4t + 2 - 5t - 3 + t 
+			=
+			1
+			\neq
+			5
+		\]
 	\setcounter{enumi}{3}
-	\item 
+	\item Observe that the line is not orthogonal to the normal of the plane
+		\begin{align*}
+			\begin{bmatrix}2&5&-1\end{bmatrix}^T
+			\cdot
+			\begin{bmatrix}-1&-4&-3\end{bmatrix}^T
+			&=
+			2\cdot(-1) + 5\cdot(-4) + (-1)\cdot(-3)
+			\\&=
+			-2 - 20 + 3
+			\\&=
+			- 19
+		\end{align*}
+		so it does not lie in it and must intersect the plane in exactly one point.
+		Plug the equation of the line into the equation of the plane
+		\begin{align*}
+			&& -(1 + 2t) - 4(-2 + 5t) - 3(3 - t) &= 6
+			\\\Rightarrow &&
+			-1 - 2t + 8 - 20t - 9 + 3t &= 6
+			\\\Rightarrow &&
+			-19t - 2 &= 6
+			\\\Rightarrow &&
+			t &= -\frac{8}{19}
+		\end{align*}
+		and plug the arrived at value of $t$ into the equation of the line
+		\[
+			\begin{bmatrix}1&-2&3\end{bmatrix}^T
+			-
+			\frac{8}{19}
+			\begin{bmatrix}2&5&-1\end{bmatrix}^T
+			=
+			\begin{bmatrix}
+				\frac{3}{19}
+				&
+				-\frac{78}{19}
+				&
+				\frac{65}{19}
+			\end{bmatrix}^T
+		\]
+		from which we see that the line intersects the plane in the point $(\frac{3}{19}, -\frac{78}{19}, \frac{65}{19})$.
 \end{enumerate}
 
 \end{document}
