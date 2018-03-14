@@ -13,10 +13,105 @@ Find the reflection of the point $P$ in the line $y = 1 + 2x$ in $\RR^2$ using t
 \end{enumerate}
 
 \solution
+Let's find the matrix of the transformation which we will use in all parts of the problem
+		\begin{align*}
+			A
+			&=
+			\begin{bmatrix}
+				1 & 0 & 1 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix}
+			\begin{bmatrix*}[r]
+				\cos(2\tan^{-1}2) &  \sin(2\tan^{-1}2) & 1 \\
+				\sin(2\tan^{-1}2) & -\cos(2\tan^{-1}2) & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+			\begin{bmatrix*}[r]
+				1 & 0 & -1 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+			\\&=
+			\begin{bmatrix}
+				1 & 0 & 1 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix}
+			\begin{bmatrix*}[r]
+				-3/5 & 4/5 & 1 \\
+				4/5 & 3/5 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+			\begin{bmatrix*}[r]
+				1 & 0 & -1 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+			\\&=
+			\begin{bmatrix}
+				1 & 0 & 1 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix}
+			\begin{bmatrix*}[r]
+				-3/5 & 4/5 & 8/5 \\
+				4/5 & 3/5 & -4/5 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+			\\&=
+			\begin{bmatrix*}[r]
+				-3/5 & 4/5 & 13/5 \\
+				4/5 & 3/5 & -4/5 \\
+				0 & 0 & 1 \\
+			\end{bmatrix*}
+		\end{align*}
 \begin{enumerate}[a)]
-	\item  
-	\item 
-	\item 
+	\item
+		\[
+			A
+			\begin{bmatrix}
+				1 \\
+				1 \\
+				1 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				14/5 \\
+				3/5 \\
+				1 \\
+			\end{bmatrix*}
+		\]
+	\item
+		\[
+			A
+			\begin{bmatrix}
+				1 \\
+				4 \\
+				1 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				26/5 \\
+				12/5 \\
+				1 \\
+			\end{bmatrix*}
+		\]
+	\item
+		\[
+			A
+			\begin{bmatrix}
+				1 \\
+				4 \\
+				1 \\
+			\end{bmatrix}
+			=
+			\begin{bmatrix*}[r]
+				22/5 \\
+				9/5 \\
+				1 \\
+			\end{bmatrix*}
+		\]
 \end{enumerate}
 
 \end{document}
