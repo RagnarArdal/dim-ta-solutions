@@ -8,5 +8,29 @@ Find the $3\times3$ matrix for reflecting in the line $y = mx + b$ using the for
 
 \solution
 
+Using the equation given in Problem 2.5.18 we get
 
+\[ \begin{bmatrix}
+      1&0&0\\
+      0&1&b\\
+      0&0&1
+    \end{bmatrix}
+    \begin{bmatrix}
+      \frac{1-m^2}{1+m^2}&\frac{2m}{1+m^2}&0\\
+      \frac{2m}{1+m^2}&\frac{m^2-1}{1+m^2}&0\\
+      0&0&1
+    \end{bmatrix}
+    \begin{bmatrix}
+      1&0&0\\
+      0&1&-b\\
+      0&0&1
+    \end{bmatrix}
+    =
+    \frac{1}{1+m^2}
+    \begin{bmatrix}
+      1-m^2 & 2m & -2mb\\
+      2m & m^2-1 & 2b\\
+      0&0&1
+    \end{bmatrix}
+\]
 \end{document}
