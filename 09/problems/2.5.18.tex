@@ -19,33 +19,35 @@ Show that $m = \sin\theta/\cos\theta = \tan\theta$ yields the formula of Example
 
 \solution
 
-We start by replacing $m$ with $\tan\theta$. Notice that the slope for a line going through the
-origin with angle $\theta$ is given by $\tan\theta$.
+We start by replacing $m$ with $\sin\theta/\cos\theta$. Notice that the slope for a line going through the
+origin with angle $\theta$ is given by $\sin\theta/\cos\theta$.
 
-\[
-    Q = \frac{1}{1+\tan^2\theta}
+\begin{align*}
+    Q &= \frac{1}{1+\frac{\sin^2\theta}{\cos^2\theta}}
         \begin{bmatrix}
-            1 - \tan^2\theta & 2\tan\theta\\
-            2\tan\theta & \tan^2\theta-1
+            1 - \frac{\sin^2\theta}{\cos^2\theta} & 2\cdot\frac{\sin\theta}{\cos\theta}\\
+            2\cdot\frac{\sin\theta}{\cos\theta} & \frac{\sin^2\theta}{\cos^2\theta}-1
+        \end{bmatrix}\\
+	&= \frac{1}{\frac{\cos^2\theta + \sin^2\theta}{\cos^2\theta}}
+        \begin{bmatrix}
+            \frac{\cos^2\theta - \sin^2\theta}{\cos^2\theta} & 2\cdot\frac{\sin\theta}{\cos\theta}\\
+            2\cdot\frac{\sin\theta}{\cos\theta} & \frac{\sin^2\theta-\cos^2\theta}{\cos^2\theta}
+        \end{bmatrix}\\
+	&= 
+	\frac{1}{\frac{\cos^2\theta + \sin^2\theta}{\cos^2\theta}}
+        \begin{bmatrix}
+            \frac{\cos^2\theta - \sin^2\theta}{\cos^2\theta} & 2\cdot\frac{\sin\theta}{\cos\theta}\\
+            2\cdot\frac{\sin\theta}{\cos\theta} & \frac{\sin^2\theta-\cos^2\theta}{\cos^2\theta}
+        \end{bmatrix}\\
+	&= \cos^2\theta
+        \begin{bmatrix}
+            \frac{\cos^2\theta - \sin^2\theta}{\cos^2\theta} & 2\cdot\frac{\sin\theta}{\cos\theta}\\
+            2\cdot\frac{\sin\theta}{\cos\theta} & \frac{\sin^2\theta-\cos^2\theta}{\cos^2\theta}
+        \end{bmatrix}\\
+	&= \begin{bmatrix}
+           \cos^2\theta - \sin^2\theta & 2\sin\theta\cos\theta\\
+            2\sin\theta\cos\theta & \sin^2\theta-\cos^2\theta
         \end{bmatrix}
-\]
-
-We can then use trigonometric identities for double-angles
-
-\[
-    \frac{1-\tan^2\theta}{1+\tan^2\theta} = \cos2\theta
-\]
-and
-\[
-    \frac{2\tan\theta}{1+\tan^2\theta} = \sin2\theta
-\]
-
-to get
-
-\[ Q = \begin{bmatrix}
-            \cos2\theta & \sin2\theta\\
-            \sin2\theta & -\cos2\theta
-        \end{bmatrix}
-\]
+\end{align*}
 which is the same as the formula given in Example 10.
 \end{document}

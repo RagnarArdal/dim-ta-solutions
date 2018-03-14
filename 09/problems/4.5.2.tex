@@ -7,14 +7,16 @@ Find the matrix for turning the letter $A$ in figure 4.41 upside down in place.
 
 \solution
 
-To turn the letter $A$ upside down in place we need to reflect the vertices around the $x$-axis
-that is in the middle of the letter. We calculate the $y$ value of the $x$-axis by taking the
+To turn the letter $A$ upside down in place we need to reflect the vertices around the line
+that is in the middle of the letter. We calculate the $y$ value of the line by taking the
 average of the maximum and minimum $y$ values. 
 
 \[ y_{mid} = (y_{max}+y_{min})/2 = (9+0)/2 = 4.5 \]
 
-To reflect it we will use homogenous coordinates, we will translate by the vector
-$\begin{bmatrix}0&-4.5\end{bmatrix}^T$ and then rotate around the $x$-axis. 
+To reflect it we will use homogenous coordinates, we will translate everything
+so $P(0,4.5)$ will become the origin and pulling the line down to the
+$x$-axis and then reflecting around the $x$-axis before translating
+everything back.
 
 \[ R = \begin{bmatrix}
             1 & 0 & 0\\
@@ -36,25 +38,6 @@ $\begin{bmatrix}0&-4.5\end{bmatrix}^T$ and then rotate around the $x$-axis.
             0 & -1 & 9\\
             0 & 0 & 1
         \end{bmatrix}
-\]
-
-We can then multiply $R$ with $K_d$ to get the new data matrix.
-
-\[ R\cdot K_d = \begin{bmatrix}
-                    1 & 0 & 0\\
-                    0 & -1 & 9\\
-                    0 & 0 & 1
-                \end{bmatrix}
-                \begin{bmatrix}
-                    0 & 6 & 5 & 1 & 3\\
-                    0 & 0 & 3 & 3 & 9\\
-                    1 & 1 & 1 & 1 & 1
-                \end{bmatrix} = 
-                \begin{bmatrix}
-                    0&6&5&1&3\\
-                    9&9&6&6&0\\
-                    1&1&1&1&1
-                \end{bmatrix}
 \]
 
 \end{document}
