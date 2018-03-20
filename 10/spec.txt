@@ -1,0 +1,28 @@
+Exercise Class Solutions 10
+
+
+# 6 Counting
+
+
+## 4 Binomial Coefficients and Identities
+
+3
+5
+9
+13
+15
+
+
+## 5 Generalized Permutations and Combinations
+
+1
+3
+5
+7
+9 abcde
+11
+13
+21
+23
+31
+41

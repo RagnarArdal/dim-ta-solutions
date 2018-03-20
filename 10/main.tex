@@ -1,0 +1,110 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{enumerate}
+\usepackage{subfiles}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand{\chapter}[2]{%
+\setcounter{section}{#1-1}%
+\section{#2}%
+}
+
+\newcommand{\subchapter}[2]{%
+\setcounter{subsection}{#1-1}%
+\subsection{#2}%
+}
+
+\newcommand{\problem}[1]{%
+\setcounter{subsubsection}{#1-1}%
+\subsubsection{\hfill}%
+}
+
+\newcommand{\solution}{%
+\subsubsection*{Solution}%
+}
+
+% Misc math operators
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% Operators for predicate logic
+
+\DeclareMathOperator{\T}{\text{\textbf T}}
+\DeclareMathOperator{\F}{\text{\textbf F}}
+\DeclareMathOperator{\lthen}{\to}
+\DeclareMathOperator{\limplies}{\to}
+\DeclareMathOperator{\lwhen}{\gets}
+\DeclareMathOperator{\lif}{\gets}
+\DeclareMathOperator{\liff}{\leftrightarrow}
+\DeclareMathOperator{\lxor}{\oplus}
+
+% Sets
+
+\DeclarePairedDelimiter{\set}
+	{\lbrace}
+	{\rbrace}
+\DeclareMathOperator{\ZZ}{\mathbb{Z}}
+\DeclareMathOperator{\SetOfIntegers}{\ZZ}
+\DeclareMathOperator{\ZZPos}{\mathbb{Z}^+}
+\DeclareMathOperator{\SetOfPositiveIntegers}{\ZZPos}
+\DeclareMathOperator{\NN}{\mathbb{N}}
+\DeclareMathOperator{\SetOfNaturalNumbers}{\NN}
+\DeclareMathOperator{\RR}{\mathbb{R}}
+\DeclareMathOperator{\SetOfRealNumbers}{\RR}
+\DeclareMathOperator{\RRPos}{\mathbb{R}^+}
+\DeclareMathOperator{\SetOfPositiveRealNumbers}{\RRPos}
+\DeclareMathOperator{\QQ}{\mathbb{Q}}
+\DeclareMathOperator{\SetOfRationalNumbers}{\QQ}
+\DeclareMathOperator{\CC}{\mathbb{C}}
+\DeclareMathOperator{\SetOfComplexNumbers}{\CC}
+
+\begin{document}
+
+\title{Exercise Class Solutions 10}
+\date{}
+\author{}
+\maketitle
+
+\chapter{6}{Counting}
+	\subchapter{4}{Binomial Coefficients and Identities}
+		\subfile{problems/6.4.3.tex}
+		\pagebreak
+		\subfile{problems/6.4.5.tex}
+		\pagebreak
+		\subfile{problems/6.4.9.tex}
+		\pagebreak
+		\subfile{problems/6.4.13.tex}
+		\pagebreak
+		\subfile{problems/6.4.15.tex}
+		\pagebreak
+	\subchapter{5}{Generalized Permutations and Combinations}
+		\subfile{problems/6.5.1.tex}
+		\pagebreak
+		\subfile{problems/6.5.3.tex}
+		\pagebreak
+		\subfile{problems/6.5.5.tex}
+		\pagebreak
+		\subfile{problems/6.5.7.tex}
+		\pagebreak
+		\subfile{problems/6.5.9abcde.tex}
+		\pagebreak
+		\subfile{problems/6.5.11.tex}
+		\pagebreak
+		\subfile{problems/6.5.13.tex}
+		\pagebreak
+		\subfile{problems/6.5.21.tex}
+		\pagebreak
+		\subfile{problems/6.5.23.tex}
+		\pagebreak
+		\subfile{problems/6.5.31.tex}
+		\pagebreak
+		\subfile{problems/6.5.41.tex}
+		\pagebreak
+
+\end{document}
