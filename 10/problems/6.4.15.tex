@@ -6,6 +6,10 @@
 Show that $\binom{n}{k} \leq 2^n$ for all positive integers $n$ and all integers $k$ with $0 \leq k \leq n$.
 
 \solution
-
+%Choosing $k$ items from $n$ can be interpreted as looking at the items one-by-one and making a choice between selecting it or not until you have selected $k$ items. At most you make this choice $n$ times, ...
+\[
+	\binom{n}{k} \leq \sum_{i=0}^n\binom{n}{i} = 2^n
+\]
+by Corollary 1.
 
 \end{document}
