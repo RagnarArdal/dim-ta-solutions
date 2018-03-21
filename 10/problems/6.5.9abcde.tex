@@ -15,11 +15,16 @@ How many ways are there to choose
 
 \solution
 \begin{enumerate}[a)]
-	\item 
-	\item 
-	\item 
-	\item 
-	\item 
+	\item Using Theorem 2 we have that this equals to $C(8+6-1, 6) = 1716$ 
+	\item Using Theorem 2 again we have that this equals to $C(8+12-1, 12) = 50388$
+	\item Again we use Theorem 2 to get $C(8+24-1, 24) = 2629575$
+	\item Since we have to have at least one of each kind we can just start by assuming we have
+          already picked one of each kind, leaving us with $4$ bagels that we can choose any
+          way we like. We can then use Theorem 2 again to get $C(8+4-1,4) = 330$
+	\item Start by assuming we already picked three egg bagels. That leaves us with $9$ bagels
+          that we can choose but we can pick at most two salty bagels so we will sum over the
+          possible amount of salty bagels we pick and use Theorem 2 again
+          \[ C(7+9-1, 9) + C(7+8-1, 8) + C(7+7-1, 7) = 9724 \]
 \end{enumerate}
 
 \end{document}
