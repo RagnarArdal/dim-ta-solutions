@@ -1,0 +1,105 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{enumerate}
+\usepackage{subfiles}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand{\chapter}[2]{%
+\setcounter{section}{#1-1}%
+\section{#2}%
+}
+
+\newcommand{\subchapter}[2]{%
+\setcounter{subsection}{#1-1}%
+\subsection{#2}%
+}
+
+\newcommand{\problem}[1]{%
+\setcounter{subsubsection}{#1-1}%
+\subsubsection{\hfill}%
+}
+
+\newcommand{\solution}{%
+\subsubsection*{Solution}%
+}
+
+% Misc math operators
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% Operators for predicate logic
+
+\DeclareMathOperator{\T}{\text{\textbf T}}
+\DeclareMathOperator{\F}{\text{\textbf F}}
+\DeclareMathOperator{\lthen}{\to}
+\DeclareMathOperator{\limplies}{\to}
+\DeclareMathOperator{\lwhen}{\gets}
+\DeclareMathOperator{\lif}{\gets}
+\DeclareMathOperator{\liff}{\leftrightarrow}
+\DeclareMathOperator{\lxor}{\oplus}
+
+% Sets
+
+\DeclarePairedDelimiter{\set}
+	{\lbrace}
+	{\rbrace}
+\DeclareMathOperator{\ZZ}{\mathbb{Z}}
+\DeclareMathOperator{\SetOfIntegers}{\ZZ}
+\DeclareMathOperator{\ZZPos}{\mathbb{Z}^+}
+\DeclareMathOperator{\SetOfPositiveIntegers}{\ZZPos}
+\DeclareMathOperator{\NN}{\mathbb{N}}
+\DeclareMathOperator{\SetOfNaturalNumbers}{\NN}
+\DeclareMathOperator{\RR}{\mathbb{R}}
+\DeclareMathOperator{\SetOfRealNumbers}{\RR}
+\DeclareMathOperator{\RRPos}{\mathbb{R}^+}
+\DeclareMathOperator{\SetOfPositiveRealNumbers}{\RRPos}
+\DeclareMathOperator{\QQ}{\mathbb{Q}}
+\DeclareMathOperator{\SetOfRationalNumbers}{\QQ}
+\DeclareMathOperator{\CC}{\mathbb{C}}
+\DeclareMathOperator{\SetOfComplexNumbers}{\CC}
+
+\begin{document}
+
+\title{Exercise Class Solutions 11}
+\date{}
+\author{}
+\maketitle
+
+\chapter{7}{Discrete Probability}
+	\subchapter{2}{Probability Theory}
+		\subfile{problems/7.2.1.tex}
+		\pagebreak
+		\subfile{problems/7.2.5.tex}
+		\pagebreak
+		\subfile{problems/7.2.23.tex}
+		\pagebreak
+		\subfile{problems/7.2.25.tex}
+		\pagebreak
+		\subfile{problems/7.2.28abcd.tex}
+		\pagebreak
+		\subfile{problems/7.2.29.tex}
+		\pagebreak
+		\subfile{problems/7.2.35abcd.tex}
+		\pagebreak
+	\subchapter{3}{Bayes' Theorem}
+		\subfile{problems/7.3.1.tex}
+		\pagebreak
+		\subfile{problems/7.3.3.tex}
+		\pagebreak
+		\subfile{problems/7.3.5.tex}
+		\pagebreak
+		\subfile{problems/7.3.9abcd.tex}
+		\pagebreak
+	\subchapter{4}{Expected Value and Variance}
+		\subfile{problems/7.4.3.tex}
+		\pagebreak
+		\subfile{problems/7.4.7.tex}
+		\pagebreak
+
+\end{document}
