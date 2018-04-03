@@ -13,11 +13,12 @@ What is the probability that a family of five children has
 \end{enumerate}
 
 \solution
+For this problem, we model the bearing of children as a Bernoulli trial where---as controversial as it may seem---success is having a boy.
 \begin{enumerate}[a)]
-	\item 
-	\item 
-	\item 
-	\item 
+	\item $C(5, 1)(0.51)^1(0.49)^4$
+	\item $1 - C(5, 0)(0.51)^0(0.49)^5 = 1 - 0.49^5$
+	\item $1 - C(5, 5)(0.51)^5(0.49)^0 = 1 - 0.51^5$
+	\item $C(5, 0)(0.51)^0(0.49)^5 + C(5, 5)(0.51)^5(0.49)^0 = 0.49^5 + 0.51^5$
 \end{enumerate}
 
 \end{document}
