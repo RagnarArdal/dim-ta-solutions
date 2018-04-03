@@ -14,11 +14,15 @@ What is the probability that
 \end{enumerate}
 
 \solution
+Let $A$ be the event that a patient is infected with HIV. Let $+$ be the event that a patient tests positive for HIV.
+From the problem description we have that $p(A) = 0.08$, $p(\bar{A}) = 1-0.08 = 0.92$, $p(+) = 0.08 \cdot 0.98 + 0.92
+\cdot 0.03 = 0.106$, $p(\bar{+}) = 1-0.106 = 0.894$, $p(+|A) = 0.98$, $p(+|\bar{A}) = 0.03$, $p(\bar{+}|A) = 
+1-0.98 = 0.02$ and $p(\bar{+}|\bar{A}) = 1-0.03 = 0.97$.  
 \begin{enumerate}[a)]
-	\item 
-	\item 
-	\item 
-	\item 
+	\item $p(A|+) = \frac{0.98 \cdot 0.08}{0.106} = 0.74$
+	\item $p(\bar{A}|+) = \frac{0.03 \cdot 0.92}{0.106} = 0.26$
+	\item $p(A|\bar{+}) = \frac{0.02 \cdot 0.08}{0.894} = 0.002$
+	\item $p(\bar{A}|\bar{+}) = \frac{0.97 \cdot 0.92}{0.894} = 0.998$
 \end{enumerate}
 
 \end{document}
